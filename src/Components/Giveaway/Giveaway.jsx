@@ -12,7 +12,7 @@ const Giveaway = () => {
     useEffect(() => {
         const checkGiveawayStatus = async () => {
             try {
-                const response = await axios.get('http://punisher-website.free.nf/news_backend/api1.php?action=get');
+                const response = await axios.get('https://punisher-website.free.nf/news_backend/api1.php?action=get');
                 const settings = response.data;
                 const currentDate = new Date();
                 const endDate = new Date(settings.end_date);
@@ -42,7 +42,7 @@ const Giveaway = () => {
         e.preventDefault();
 
         try {
-            const response = await axios.post('http://punisher-website.free.nf/news_backend/api1.php?action=addParticipant', {
+            const response = await axios.post('https://punisher-website.free.nf/news_backend/api1.php?action=addParticipant', {
                 in_game_name: inGameName,
                 server: server,
                 platform: platform
