@@ -14,7 +14,7 @@ const Counter = () => {
     useEffect(() => {
         const fetchParticipationData = async () => {
             try {
-                const response = await axios.get('http://punisher-website.free.nf/news_backend/api2.php?action=getParticipationCount');
+                const response = await axios.get('https://punisher-website.free.nf/news_backend/api2.php?action=getParticipationCount');
                 const data = response.data;
                 setParticipations(data.current_participations);
                 setMaxParticipations(data.max_participations);
@@ -59,7 +59,7 @@ const Counter = () => {
 
     const fetchWinners = async () => {
         try {
-            const response = await axios.get('http://punisher-website.free.nf/news_backend/api2.php?action=getWinner');
+            const response = await axios.get('https://punisher-website.free.nf/news_backend/api2.php?action=getWinner');
             const data = response.data;
             setWinners(data);
         } catch (error) {
