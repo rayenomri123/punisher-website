@@ -14,7 +14,7 @@ const NewsSection = () => {
 
   const fetchNews = () => {
     // Fetch news data (adjust URL based on your setup)
-    fetch('http://punisher-website.free.nf/news_backend/api.php')
+    fetch('https://punisher-website.free.nf/news_backend/api.php')
       .then(response => response.json())
       .then(data => setNews(data))
       .catch(error => console.error('Error fetching news:', error));
