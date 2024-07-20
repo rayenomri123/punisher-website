@@ -1,0 +1,84 @@
+.counter {
+    width: 100%;
+    min-height: 100vh; /* Cette valeur sera ajustée */
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../../assets/giveawaybg.png');
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+#time{
+    text-align: center;
+    font-size: 18vh;
+    font-family: 'Arial', sans-serif;
+    margin-bottom: 20px;
+    opacity: 0.8;
+    color: #eeb20d;
+    text-shadow: 0 0 15px #000000, 0 0 15px #000000, 0 0 20px #000000, 0 0 20px #000000, 0 0 30px #000000;
+}
+#part{
+    color: white;
+    font-size: 2vh;
+}
+#number{
+    text-align: center;
+    text-shadow: 0 0 8px #000000, 0 0 8px #000000, 0 0 12px #000000, 0 0 12px #000000, 0 0 20px #000000;
+    font-size:6vh;
+    font-weight: bold;
+    color: #eeb20d;
+    margin-top: 30px;
+}
+#winners{
+    text-align: center;
+    font-size: 20px;
+    line-height: 1.2;
+    
+}
+#w {
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 10px;
+    color: #eeb20d;
+    text-shadow: 0 0 8px #000000, 0 0 8px #000000, 0 0 12px #000000, 0 0 12px #000000, 0 0 20px #000000;
+}
+
+#ingamename{
+    color: #0dee99;
+    font-weight: bold;
+    font-size: 25px;
+}
+#server{
+    color: #0d6fee;
+    font-size: 25px;
+    font-weight: bold;
+}
+#platform{
+    color: #ffffff;
+    font-size: 25px;
+    font-weight: bold;
+}
+#img{
+    width: 50vh;
+    display: block;
+    margin: auto ;
+}
+@media (max-width: 768px) {
+    .counter {
+        min-height: 70vh; /* Nouvelle valeur pour les écrans mobiles */
+    }
+    
+    #time {
+        font-size: 8vh;
+    }
+    #part{
+        
+        font-size: 1vh;
+    }
+    #number{
+        
+        font-size:3vh;
+       
+    }
+}

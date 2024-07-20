@@ -1,0 +1,132 @@
+nav {
+  width: 100%;
+  color: #fff;
+  padding: 4px 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 10;
+  /* background-color: #333; /* Optional: Uncomment if you want a background color */
+  box-sizing: border-box;
+  padding: 0px 20px;
+}
+
+.logo {
+  width: 150px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  flex-wrap: wrap;
+}
+
+nav ul li {
+  position: relative;
+  margin: 5px 10px;
+  font-size: 16px;
+  cursor: pointer;
+
+}
+
+nav ul li:not(:last-child) {
+  top: 0.5px;
+  
+}
+
+nav ul li:not(:last-child)::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2.5px;
+  bottom: -8px; /* Adjust this value to change the space between text and line */
+  left: 0;
+  background-color: #0dee98;
+  transition: width 0.3s ease-in-out;
+  
+}
+
+nav ul li:not(:last-child):hover::after {
+  width: 100%;
+}
+
+#btn {
+  background: #0dee98a0;
+  color: #ffffff;
+  padding: 10px 15px;
+  font-size: 16px;
+  border-radius: 25px;
+  cursor: pointer;
+  border: 0;
+  outline: 0;
+  transition: background 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+#btn:hover {
+  background: #0dee98ee;
+  color: black;
+}
+.dark-nav{
+  background: #ffffff30;
+  transition: 0.5s;
+}
+.menu-icon{
+  display: none;
+}
+@media (max-width: 1000px){
+  .logo{
+    width: 140px;
+  }
+  nav ul li{
+    margin: 10px 15px;
+  }
+}
+@media (max-width: 840px){
+  nav{
+    padding: 15px 0;
+  }
+  nav ul{
+    position:fixed;
+    top: 0;
+    right: 0px;
+    bottom: 0;
+    background: #ffffff30;
+    z-index: -1;
+    width: 200px;
+    padding-top: 70px;
+    transition: 0.5s;
+    padding-top: 30%;
+    padding-right: 0;
+    padding-left: 0;
+    padding-bottom: 90%;
+    justify-content: center;
+    align-items: center;
+    
+  }
+  nav ul li{
+    display:block;
+    margin: 20px 40px;
+    
+  }
+  .menu-icon{
+    display: block;
+    width: 30px;
+    cursor: pointer;
+    width: 40px;
+}
+  .hide-mobile-menu{
+    right: -200px;
+  }
+  .dark-nav{
+    background: #ffffff00;
+    transition: 0.5s;
+  }
+}

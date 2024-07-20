@@ -1,0 +1,36 @@
+#titlesection{
+    display: flex; /* Enables flexbox layout */
+    justify-content: center; /* Centers content horizontally */
+    align-items: center; /* Centers content vertically (if needed) */
+    font-size: 15px;
+    font-weight: 600;
+    background-color: rgb(0, 0, 0);
+    padding: 10px;
+   
+}
+.title {
+    text-align: center; /* Centers the text horizontally */
+    color: #eeb20d;
+    font-size: 15px;
+    font-weight: 600;
+    text-transform: uppercase;
+    background-color: rgba(24, 24, 24, 0);
+    padding: 30px;
+}
+
+.title h2{
+
+    font-size: 32px;
+    color: #ffffff;
+    margin-top: 5px;
+    text-transform: none;
+}
+#left, #right{
+    width: 5%;
+    opacity: 0.7;
+}
+@media (max-width: 768px) {
+    #left, #right{
+        width: 12%;
+    }
+}

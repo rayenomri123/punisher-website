@@ -1,0 +1,102 @@
+/* Container for the login page */
+#login-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.6)), url('src/assets/login.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 20px;
+}
+
+/* Styling for the login form */
+#login-form {
+    
+    background-color: #00000047;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 100%;
+    max-width: 400px;
+    box-sizing: border-box; /* Ensure padding doesn't exceed max-width */
+}
+
+/* Form header styling */
+#login-form h2 {
+    margin-bottom: 20px;
+    font-size: 1.5em; /* Responsive font size */
+    color: #0dee98da;
+    text-align: center;
+}
+
+/* Form group styling */
+#form-group {
+    margin-bottom: 15px;
+}
+
+/* Label styling */
+#form-group label {
+    display: block;
+    font-size: 1.1em; /* Responsive font size */
+    color: #ffffff;
+    margin-bottom: 10px;
+}
+
+/* Input field styling */
+#form-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ffffff15;
+    border-radius: 4px;
+    font-size: 1em; /* Responsive font size */
+    background-color: #0000001f; /* Semi-transparent black background for better readability */
+    color: #ffffff; /* White text color */
+    box-sizing: border-box; /* Ensure padding doesn't exceed width */
+}
+
+
+/* Button styling */
+#bt {
+    display: block; /* Rend le bouton un élément de bloc */
+    margin: 0 auto;
+    background-color: #0dee988a;
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 15px;
+    font-size: 1em; /* Responsive font size */
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 150px;
+}
+
+/* Button hover effect */
+#bt:hover {
+    background-color: #0dee98da;
+}
+
+/* Styling for error messages */
+#message {
+    color: #ff0000;
+    margin-top: 20px;
+    font-size: 0.875em; /* Responsive font size */
+    text-align: center;
+}
+
+/* Media Queries for responsiveness */
+
+/* Tablets and up */
+@media (min-width: 768px) {
+    #login-form {
+        max-width: 500px; /* Increase form width on larger screens */
+    }
+}
+
+/* Desktops and up */
+@media (min-width: 992px) {
+    #login-form {
+        max-width: 600px; /* Further increase form width on even larger screens */
+    }
+}
